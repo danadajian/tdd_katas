@@ -1,0 +1,33 @@
+(ns tdd.roman_numerals-test
+  (:require [clojure.test :refer :all]
+            [tdd.roman_numerals :refer :all]))
+
+(deftest a-test
+  (testing
+    (is (= (translate-roman-numerals "I") 1))
+    (is (= (translate-roman-numerals "II") 2))
+    (is (= (translate-roman-numerals "III") 3))
+    (is (= (translate-roman-numerals "IV") 4))
+    (is (= (translate-roman-numerals "V") 5))
+    (is (= (translate-roman-numerals "VI") 6))
+    (is (= (translate-roman-numerals "VII") 7))
+    (is (= (translate-roman-numerals "VIII") 8))
+    (is (= (translate-roman-numerals "IX") 9))
+    (is (= (translate-roman-numerals "X") 10))
+    (is (= (translate-roman-numerals "XII") 12))
+    (is (= (translate-roman-numerals "XIV") 14))
+    (is (= (translate-roman-numerals "XIX") 19))
+    (is (= (translate-roman-numerals "XL") 40))
+    (is (= (translate-roman-numerals "XLIX") 49))
+    (is (= (translate-roman-numerals "L") 50))
+    (is (= (translate-roman-numerals "LX") 60))
+    (is (= (translate-roman-numerals "XC") 90))
+    (is (= (translate-roman-numerals "CX") 110))
+    (is (= (translate-roman-numerals "CD") 400))
+    (is (= (translate-roman-numerals "DC") 600))
+    (is (= (translate-roman-numerals "CM") 900))
+    (is (= (translate-roman-numerals "MC") 1100))
+    (is (= (translate-roman-numerals "IV") 4))
+    (is (= (translate-roman-numerals "MMVIII") 2008))
+    (is (= (translate-roman-numerals "MDCLXVI") 1666))
+    ))
