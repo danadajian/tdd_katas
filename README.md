@@ -1,9 +1,7 @@
 # tdd_katas
 
-Honing my TDD craft by learning Clojure.
+Honing my TDD craft while learning new languages.
 
-### IntelliJ Setup
-
-* Cursive plugin
-* Leiningen Clojure project structure
-* Run tests using nREPL configuration
+### Languages
+* Clojure
+* Golang
